@@ -3,7 +3,7 @@ $I = new AcceptanceTester($scenario);
 $I->wantTo('Check languages');
 
 $I->amOnPage('/');
-$I->see('Viseo School');
+$I->see('Video School');
 
 $I->amOnPage('/en');
 $I->see('Welcome!');
