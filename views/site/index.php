@@ -1,1 +1,3 @@
-<h2>Video School</h2>
+<h2>
+   <?= Yii::t('app', 'Welcome!') ?>
+</h2>
