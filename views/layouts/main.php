@@ -1,3 +1,6 @@
+<?php
+
+use yii\helpers\Html; ?>
 <?php $this->beginPage() ?>
 <!doctype html>
 <html lang="en">
@@ -13,6 +16,11 @@
     <?= $content ?>
 
 </div>
+<br/>
+<?= (Yii::$app->language == 'en') ? 'English' :
+    Html::a('English', '/en') ?> |
+<?= (Yii::$app->language == 'ru') ? 'Русский' :
+    Html::a('Русский', '/ru') ?>
 <?php $this->endBody() ?>
 </body>
 </html>
